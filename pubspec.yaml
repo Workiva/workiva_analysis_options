@@ -1,0 +1,11 @@
+name: workiva_analysis_options
+version: 0.0.0
+homepage: https://github.com/Workiva/dart_analysis_options
+
+description: Workiva's opinionated shared static analysis options.
+
+authors:
+  - Workiva Client Platform Team <clientplatform@workiva.com>
+
+environment:
+  sdk: ">=2.4.0 <3.0.0"
