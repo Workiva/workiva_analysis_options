@@ -15,10 +15,10 @@ dev_dependencies:
 
 ```yaml
 # analysis_options.yaml
-include: package:workiva_analysis_options/analysis_options.yaml
+include: package:workiva_analysis_options/analysis_options.v1.yaml
 ```
 
-Because most packages don't commit a `pubspec.lock`, CI may fail whenever a new
+Because most packages don't commit a `pubspec.lock`, CI may fail if  whenever a new
 version of `workiva_analysis_options` is released due to changes in these shared
 options. To avoid this, consumers should target a specific version of
 `analysis_options.yaml` instead:
@@ -73,8 +73,10 @@ and rules and attempt to categorize them into one of the following:
     investigation/experimentation can be done.
 
 We will also seek feedback from the Dart developers at Workiva on a regular
-basis and will document these designations here in this README so that anyone
-can contribute or suggest changes.
+basis and use other similar resources (like the [`pedantic` package][pedantic])
+to guide our decisions. Each lint has its own issue in this repo that can be
+used to discuss changes and will serve as documentation of context and reasons
+that influenced the decisions.
 
 ## Upgrading to the latest shared options
 
@@ -96,23 +98,21 @@ To upgrade from workiva_analysis_options version `<current>` to `<new>`:
 Then all errors found by the analyzer in your IDE or by `ddev analyze` should be
 fixed and PR'd to master.
 
-## Opting in to recommended and/or optional rules
+## Opting in to recommended rules
 
 The default `analysis_options.yaml` files only enable the required rules,
-but this package also provides "strict" and "experimental" versions that also
-enable the recommended and optional rules, respectively.
+but this package also provides a separate version that also enables the
+recommended rules.
 
 ```yaml
 # analysis_options.yaml
 # Enables all required AND recommended rules.
-include: package:workiva_analysis_options/analysis_options.strict.1.0.0.yaml
+include: package:workiva_analysis_options/analysis_options.recommended.1.0.0.yaml
 ```
 
-```yaml
-# analysis_options.yaml
-# Enables all required AND recommended AND optional rules.
-include: package:workiva_analysis_options/analysis_options.experimental.1.0.0.yaml
-```
+_Note: there is also a version provided by this library that includes the
+optional rules, but it is only intended for use in an automated fashion for the
+purpose of gathering data on the number of infractions in Workiva packages._
 
 ## Ensuring adoption of the latest shared options
 
@@ -136,35 +136,7 @@ analyzer:
 
 ## Latest Analysis Options Designations
 
-### Lints
+[Lints & Rules Table of Contents][lints-toc]
 
-_TODO: Finalize these designations for v1.0.0. This is currently just a
-placeholder to demonstrate how these will be documented._
-
-Level | Name | Issue Link
--|-|-
-![require][lvl-req] | [`avoid_return_types_on_setters`][avoid_return_types_on_setters] | #10
-![require][lvl-req] | [`avoid_init_to_null`][avoid_init_to_null] | #11
-![recommend][lvl-rec] | [`non_constant_identifier_names`][non_constant_identifier_names] | #12
-![recommend][lvl-rec] | [`prefer_initializing_formals`][prefer_initializing_formals] | #13
-![optional][lvl-opt] | [`avoid_js_rounded_ints`][avoid_js_rounded_ints] | #14
-![optional][lvl-opt] | [`avoid_renaming_method_parameters`][avoid_renaming_method_parameters] | #15
-![avoid][lvl-avoid] | [`lines_longer_than_80_chars`][lines_longer_than_80_chars] | #16
-![avoid][lvl-avoid] | [`prefer_double_quotes`][prefer_double_quotes] | #17
-
-[abide]: https://github.com/Workiva/abide
-[pedantic]: https://github.com/dart-lang/pedantic
-[lvl-req]: https://img.shields.io/badge/-require-blue
-[lvl-rec]: https://img.shields.io/badge/-recommend-green
-[lvl-opt]: https://img.shields.io/badge/-optional-lightgrey
-[lvl-avoid]: https://img.shields.io/badge/-avoid-red
-
-[avoid_js_rounded_ints]: https://dart-lang.github.io/linter/lints/avoid_js_rounded_ints.html
-[avoid_renaming_method_parameters]: https://dart-lang.github.io/linter/lints/avoid_renaming_method_parameters.html
-[avoid_return_types_on_setters]: https://dart-lang.github.io/linter/lints/avoid_return_types_on_setters.html
-[avoid_init_to_null]: https://dart-lang.github.io/linter/lints/avoid_init_to_null.html
-[lines_longer_than_80_chars]: https://dart-lang.github.io/linter/lints/lines_longer_than_80_chars.html
-[non_constant_identifier_names]: https://dart-lang.github.io/linter/lints/non_constant_identifier_names.html
-[prefer_double_quotes]: https://dart-lang.github.io/linter/lints/prefer_double_quotes.html
-[prefer_initializing_formals]: https://dart-lang.github.io/linter/lints/prefer_initializing_formals.html
-[prefer_mixin]: https://dart-lang.github.io/linter/lints/prefer_mixin.html
+[lints-toc]: https://github.com/Workiva/dart_analysis_options/issues/2
+[pedantic]: https://pub.dev/packages/pedantic
