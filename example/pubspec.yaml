@@ -1,5 +1,0 @@
-name: workiva_analysis_options_example
-
-dev_dependencies:
-  workiva_analysis_options:
-    path: ..

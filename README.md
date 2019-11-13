@@ -18,15 +18,25 @@ dev_dependencies:
 include: package:workiva_analysis_options/analysis_options.v1.yaml
 ```
 
-Because most packages don't commit a `pubspec.lock`, CI may fail if  whenever a new
-version of `workiva_analysis_options` is released due to changes in these shared
-options. To avoid this, consumers should target a specific version of
-`analysis_options.yaml` instead:
+Because most packages don't commit a `pubspec.lock`, CI may fail if updates to
+the `analysis_options.yaml` files in this package are automatically consumed. To
+avoid this, all of these files include a version in the filename, and changes
+that could cause new analyzer failures will only ever be introduced in separate,
+versioned files.
 
-```yaml
-# analysis_options.yaml
-include: package:workiva_analysis_options/analysis_options.1.0.0.yaml
-```
+For example, in the next release of this library, the existing `v1` files will
+remain unmodified:
+
+- `package:workiva_analysis_options/analysis_options.v1.yaml`
+- `package:workiva_analysis_options/analysis_options.recommended.v1.yaml`
+
+And changes to the analysis options will only be included in new `v2` files:
+
+- `package:workiva_analysis_options/analysis_options.v2.yaml`
+- `package:workiva_analysis_options/analysis_options.recommended.v2.yaml`
+
+This enables consumers to depend on this package with a version range like
+`^1.0.0` while being able to manage their analysis options upgrade separately.
 
 ## How lints and analyzer rules are evaluated
 
@@ -35,7 +45,7 @@ and rules and attempt to categorize them into one of the following:
 
 - Required
   - Should provide enough value that it is worth requiring them for all Workiva
-    dart projects.
+    Dart projects.
   - Should not contradict any other required rules.
   - Usually help identify problematic code or protect against patterns that can
     be confusing or incorrect.
@@ -66,7 +76,7 @@ and rules and attempt to categorize them into one of the following:
 
 - Avoid/Not Recommended
   - May contradict one or more required or recommended rules.
-  - May be targeted towards domains that Workiva dart development does not (yet)
+  - May be targeted towards domains that Workiva Dart development does not (yet)
     overlap with (e.g. flutter).
   - May be experimental or very new.
   - May have an unclear long-term impact that should be avoided until more
@@ -78,26 +88,6 @@ to guide our decisions. Each lint has its own issue in this repo that can be
 used to discuss changes and will serve as documentation of context and reasons
 that influenced the decisions.
 
-## Upgrading to the latest shared options
-
-To upgrade from workiva_analysis_options version `<current>` to `<new>`:
-
-```diff
-  # pubspec.yaml
-  dev_dependencies:
--   workiva_analysis_options: ^<current>
-+   workiva_analysis_options: ^<new>
-```
-
-```diff
-  # analysis_options.yaml
-- include: package:workiva_analysis_options/analysis_options.<current>.yaml
-+ include: package:workiva_analysis_options/analysis_options.<new>.yaml
-```
-
-Then all errors found by the analyzer in your IDE or by `ddev analyze` should be
-fixed and PR'd to master.
-
 ## Opting in to recommended rules
 
 The default `analysis_options.yaml` files only enable the required rules,
@@ -107,7 +97,7 @@ recommended rules.
 ```yaml
 # analysis_options.yaml
 # Enables all required AND recommended rules.
-include: package:workiva_analysis_options/analysis_options.recommended.1.0.0.yaml
+include: package:workiva_analysis_options/analysis_options.recommended.v1.yaml
 ```
 
 _Note: there is also a version provided by this library that includes the

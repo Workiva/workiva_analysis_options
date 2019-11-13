@@ -6,9 +6,7 @@ WORKDIR /build/
 COPY . .
 RUN pub get
 RUN pub publish --dry-run
-
-WORKDIR /build/example/
-RUN pub get
-RUN dartanalyzer .
+RUN dartfmt -n --set-exit-if-changed .
+RUN pub run test
 
 FROM scratch

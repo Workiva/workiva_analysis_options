@@ -52,3 +52,52 @@ linter:
     - unrelated_type_equality_checks
     - valid_regexps
     - void_checks
+
+analyzer:
+  errors:
+    annotate_overrides: error
+    avoid_double_and_int_checks: error
+    avoid_empty_else: error
+    avoid_init_to_null: error
+    avoid_private_typedef_functions: error
+    avoid_return_types_on_setters: error
+    avoid_shadowing_type_parameters: error
+    avoid_single_cascade_in_expression_statements: error
+    avoid_types_as_parameter_names: error
+    await_only_futures: error
+    camel_case_extensions: error
+    camel_case_types: error
+    cancel_subscriptions: error
+    close_sinks: error
+    empty_catches: error
+    empty_constructor_bodies: error
+    empty_statements: error
+    file_names: error
+    hash_and_equals: error
+    implementation_imports: error
+    iterable_contains_unrelated_type: error
+    library_names: error
+    library_prefixes: error
+    list_remove_unrelated_type: error
+    no_adjacent_strings_in_list: error
+    no_duplicate_case_values: error
+    null_closures: error
+    only_throw_errors: error
+    prefer_contains: error
+    prefer_equal_for_default_values: error
+    prefer_generic_function_type_aliases: error
+    prefer_if_null_operators: error
+    prefer_is_empty: error
+    prefer_is_not_empty: error
+    recursive_getters: error
+    slash_for_doc_comments: error
+    type_init_formals: error
+    unnecessary_const: error
+    unnecessary_new: error
+    unnecessary_null_aware_assignments: error
+    unnecessary_null_in_if_null_operators: error
+    unnecessary_statements: error
+    unsafe_html: error
+    unrelated_type_equality_checks: error
+    valid_regexps: error
+    void_checks: error
