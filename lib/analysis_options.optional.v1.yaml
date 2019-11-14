@@ -1,0 +1,86 @@
+# Every lint in this file is categorized as "optional".
+#
+# We do not recommend using including this configuration; it is only provided as
+# a means for automated data collection on the number of infractions across
+# Workiva packages.
+#
+# For context on that decision or to discuss a change for any individual lint,
+# visit this issue and search for the lint by its name:
+# https://github.com/Workiva/dart_analysis_options/issues/2
+
+# This file also includes all of the required and recommended rules.
+include: package:workiva_analysis_options/analysis_options.recommended.v1.yaml
+
+linter:
+  rules:
+    - always_declare_return_types
+    - always_put_required_named_parameters_first
+    - always_specify_types
+    - avoid_as
+    - avoid_catches_without_on_clauses
+    - avoid_classes_with_only_static_members
+    - avoid_equals_and_hash_code_on_mutable_classes
+    - avoid_js_rounded_ints
+    - avoid_print
+    - constant_identifier_names
+    - control_flow_in_finally
+    - directives_ordering
+    - flutter_style_todos
+    - invariant_booleans
+    - literal_only_boolean_expressions
+    - non_constant_identifier_names
+    - parameter_assignments
+    - prefer_asserts_with_message
+    - prefer_const_constructors
+    - prefer_const_constructors_in_immutables
+    - prefer_const_literals_to_create_immutables
+    - prefer_expression_function_bodies
+    - prefer_for_elements_to_map_fromIterable
+    - prefer_foreach
+    - prefer_int_literals
+    - prefer_relative_imports
+    - prefer_typing_uninitialized_variables
+    - public_member_api_docs
+    - sort_child_properties_last
+    - sort_unnamed_constructors_first
+    - throw_in_finally
+    - use_setters_to_change_properties
+    - use_string_buffers
+    - use_to_and_as_if_applicable
+
+analyzer:
+  errors:
+    always_declare_return_types: error
+    always_put_required_named_parameters_first: error
+    always_specify_types: error
+    avoid_as: error
+    avoid_catches_without_on_clauses: error
+    avoid_classes_with_only_static_members: error
+    avoid_equals_and_hash_code_on_mutable_classes: error
+    avoid_js_rounded_ints: error
+    avoid_print: error
+    constant_identifier_names: error
+    control_flow_in_finally: error
+    directives_ordering: error
+    flutter_style_todos: error
+    invariant_booleans: error
+    literal_only_boolean_expressions: error
+    non_constant_identifier_names: error
+    parameter_assignments: error
+    prefer_asserts_with_message: error
+    prefer_const_constructors: error
+    prefer_const_constructors_in_immutables: error
+    prefer_const_literals_to_create_immutables: error
+    prefer_expression_function_bodies: error
+    prefer_for_elements_to_map_fromIterable: error
+    prefer_foreach: error
+    prefer_int_literals: error
+    prefer_relative_imports: error
+    prefer_typing_uninitialized_variables: error
+    public_member_api_docs: error
+    sort_child_properties_last: error
+    sort_unnamed_constructors_first: error
+    throw_in_finally: error
+    use_setters_to_change_properties: error
+    use_string_buffers: error
+    use_to_and_as_if_applicable: error
