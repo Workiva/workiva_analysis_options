@@ -15,7 +15,7 @@ dev_dependencies:
 
 ```yaml
 # analysis_options.yaml
-include: package:workiva_analysis_options/analysis_options.v1.yaml
+include: package:workiva_analysis_options/v1.yaml
 ```
 
 Because most packages don't commit a `pubspec.lock`, CI may fail if updates to
@@ -27,13 +27,13 @@ versioned files.
 For example, in the next release of this library, the existing `v1` files will
 remain unmodified:
 
-- `package:workiva_analysis_options/analysis_options.v1.yaml`
-- `package:workiva_analysis_options/analysis_options.recommended.v1.yaml`
+- `package:workiva_analysis_options/v1.yaml`
+- `package:workiva_analysis_options/v1.recommended.yaml`
 
 And changes to the analysis options will only be included in new `v2` files:
 
-- `package:workiva_analysis_options/analysis_options.v2.yaml`
-- `package:workiva_analysis_options/analysis_options.recommended.v2.yaml`
+- `package:workiva_analysis_options/v2.yaml`
+- `package:workiva_analysis_options/v2.recommended.yaml`
 
 This enables consumers to depend on this package with a version range like
 `^1.0.0` while being able to manage their analysis options upgrade separately.
@@ -82,11 +82,12 @@ and rules and attempt to categorize them into one of the following:
   - May have an unclear long-term impact that should be avoided until more
     investigation/experimentation can be done.
 
-We will also seek feedback from the Dart developers at Workiva on a regular
-basis and use other similar resources (like the [`pedantic` package][pedantic])
-to guide our decisions. Each lint has its own issue in this repo that can be
-used to discuss changes and will serve as documentation of context and reasons
-that influenced the decisions.
+We will use feedback from the Dart developers at Workiva, other similar
+resources (like the [`pedantic` package][pedantic]), and the number of existing
+infractions across Workiva Dart projects (collected automatically) to inform our
+decisions. Each lint has its own issue in this repo that can be used to discuss
+changes and will serve as documentation of context and reasons that influenced
+the decisions.
 
 ## Opting in to recommended rules
 
@@ -97,7 +98,7 @@ recommended rules.
 ```yaml
 # analysis_options.yaml
 # Enables all required AND recommended rules.
-include: package:workiva_analysis_options/analysis_options.recommended.v1.yaml
+include: package:workiva_analysis_options/v1.recommended.yaml
 ```
 
 _Note: there is also a version provided by this library that includes the
@@ -106,9 +107,9 @@ purpose of gathering data on the number of infractions in Workiva packages._
 
 ## Ensuring adoption of the latest shared options
 
-The [`abide` tool][abide] will be integrated into a CI check to verify that
-Workiva Dart projects depend on this package at a specific version (or later)
-and include the shared config in `analysis_options.yaml`.
+An automated tool will be integrated into a CI check to verify that Workiva Dart
+projects depend on this package at a specific version (or later) and include the
+shared config in `analysis_options.yaml`.
 
 ## Ensuring that analyzer errors/warnings/lints get fixed
 
@@ -116,7 +117,7 @@ All required analyzer lints and rules will have their severities upgraded to
 "error" so that they cause analysis to fail by default.
 
 ```yaml
-# package:workiva_analysis_options/analysis_options.yaml
+# package:workiva_analysis_options/v1.yaml
 analyzer:
   errors:
     avoid_empty_else: error
