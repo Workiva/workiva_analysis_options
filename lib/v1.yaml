@@ -1,0 +1,172 @@
+# Copyright 2019 Workiva, Inc.
+#
+# Redistribution and use in source and binary forms, with or without modification,
+# are permitted provided that the following conditions are met:
+#
+# 1. Redistributions of source code must retain the above copyright notice, this
+# list of conditions and the following disclaimer.
+#
+# 2. Redistributions in binary form must reproduce the above copyright notice,
+# this list of conditions and the following disclaimer in the documentation and/or
+# other materials provided with the distribution.
+#
+# 3. Neither the name of the copyright holder nor the names of its contributors
+# may be used to endorse or promote products derived from this software without
+# specific prior written permission.
+#
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+# ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+# DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+# ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+# (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+# LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+# ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+# (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+# SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+# This software is derived from pedantic (https://github.com/dart-lang/pedantic)
+# with separate copyright notices and license terms:
+#
+# Copyright 2017, the Dart project authors. All rights reserved.
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are
+# met:
+#
+# Redistributions of source code must retain the above copyright
+# notice, this list of conditions and the following disclaimer.
+# Redistributions in binary form must reproduce the above
+# copyright notice, this list of conditions and the following
+# disclaimer in the documentation and/or other materials provided
+# with the distribution.
+# Neither the name of Google Inc. nor the names of its
+# contributors may be used to endorse or promote products derived
+# from this software without specific prior written permission.
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+# "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+# LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+# A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+# OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+# SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+# LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+# DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+# THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+# (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+# OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+# Every lint in this file is categorized as "required".
+#
+# For context on that decision or to discuss a change for any individual lint,
+# visit this issue and search for the lint by its name:
+# https://github.com/Workiva/workiva_analysis_options/issues/2
+
+analyzer:
+  errors:
+    # Protect against using language features that are incompatible with the
+    # minimum SDK version for the current project:
+    sdk_version_async_exported_from_core: error
+    sdk_version_as_expression_in_const_context: error
+    sdk_version_bool_operator_in_const_context: error
+    sdk_version_eq_eq_operator_in_const_context: error
+    sdk_version_extension_methods: error
+    sdk_version_is_expression_in_const_context: error
+    sdk_version_set_literal: error
+    sdk_version_ui_as_code: error
+    sdk_version_ui_as_code_in_const_context: error
+
+    # Promote enabled lints to errors:
+    annotate_overrides: error
+    avoid_double_and_int_checks: error
+    avoid_empty_else: error
+    avoid_init_to_null: error
+    avoid_private_typedef_functions: error
+    avoid_return_types_on_setters: error
+    avoid_shadowing_type_parameters: error
+    avoid_single_cascade_in_expression_statements: error
+    avoid_types_as_parameter_names: error
+    await_only_futures: error
+    camel_case_extensions: error
+    camel_case_types: error
+    cancel_subscriptions: error
+    close_sinks: error
+    empty_catches: error
+    empty_constructor_bodies: error
+    empty_statements: error
+    file_names: error
+    hash_and_equals: error
+    implementation_imports: error
+    iterable_contains_unrelated_type: error
+    library_names: error
+    library_prefixes: error
+    list_remove_unrelated_type: error
+    no_adjacent_strings_in_list: error
+    no_duplicate_case_values: error
+    null_closures: error
+    only_throw_errors: error
+    prefer_contains: error
+    prefer_equal_for_default_values: error
+    prefer_generic_function_type_aliases: error
+    prefer_if_null_operators: error
+    prefer_is_empty: error
+    prefer_is_not_empty: error
+    recursive_getters: error
+    slash_for_doc_comments: error
+    type_init_formals: error
+    unnecessary_const: error
+    unnecessary_new: error
+    unnecessary_null_aware_assignments: error
+    unnecessary_null_in_if_null_operators: error
+    unnecessary_statements: error
+    unsafe_html: error
+    unrelated_type_equality_checks: error
+    valid_regexps: error
+    void_checks: error
+
+linter:
+  rules:
+    - annotate_overrides
+    - avoid_double_and_int_checks
+    - avoid_empty_else
+    - avoid_init_to_null
+    - avoid_private_typedef_functions
+    - avoid_return_types_on_setters
+    - avoid_shadowing_type_parameters
+    - avoid_single_cascade_in_expression_statements
+    - avoid_types_as_parameter_names
+    - await_only_futures
+    - camel_case_extensions
+    - camel_case_types
+    - cancel_subscriptions
+    - close_sinks
+    - empty_catches
+    - empty_constructor_bodies
+    - empty_statements
+    - file_names
+    - hash_and_equals
+    - implementation_imports
+    - iterable_contains_unrelated_type
+    - library_names
+    - library_prefixes
+    - list_remove_unrelated_type
+    - no_adjacent_strings_in_list
+    - no_duplicate_case_values
+    - null_closures
+    - only_throw_errors
+    - prefer_contains
+    - prefer_equal_for_default_values
+    - prefer_generic_function_type_aliases
+    - prefer_if_null_operators
+    - prefer_is_empty
+    - prefer_is_not_empty
+    - recursive_getters
+    - slash_for_doc_comments
+    - type_init_formals
+    - unnecessary_const
+    - unnecessary_new
+    - unnecessary_null_aware_assignments
+    - unnecessary_null_in_if_null_operators
+    - unnecessary_statements
+    - unsafe_html
+    - unrelated_type_equality_checks
+    - valid_regexps
+    - void_checks
