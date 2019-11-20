@@ -16,7 +16,7 @@
 #
 # For context on that decision or to discuss a change for any individual lint,
 # visit this issue and search for the lint by its name:
-# https://github.com/Workiva/dart_analysis_options/issues/2
+# https://github.com/Workiva/workiva_analysis_options/issues/2
 
 # This file also includes all of the required rules.
 include: package:workiva_analysis_options/v1.yaml

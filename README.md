@@ -129,5 +129,5 @@ analyzer:
 
 [Lints & Rules Table of Contents][lints-toc]
 
-[lints-toc]: https://github.com/Workiva/dart_analysis_options/issues/2
+[lints-toc]: https://github.com/Workiva/workiva_analysis_options/issues/2
 [pedantic]: https://pub.dev/packages/pedantic

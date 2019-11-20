@@ -1,6 +1,6 @@
 name: workiva_analysis_options
 version: 1.0.0
-homepage: https://github.com/Workiva/dart_analysis_options
+homepage: https://github.com/Workiva/workiva_analysis_options
 
 description: Workiva's shared static analysis options.
 
