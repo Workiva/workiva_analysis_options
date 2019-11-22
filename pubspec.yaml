@@ -1,5 +1,5 @@
 name: workiva_analysis_options
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/Workiva/workiva_analysis_options
 
 description: Workiva's shared static analysis options.

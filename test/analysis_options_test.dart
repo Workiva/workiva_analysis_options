@@ -75,7 +75,7 @@ void main() {
 
       final severities = Map<String, String>.from(yaml['analyzer']['errors']);
       for (final lint in lints) {
-        expect(severities, containsPair(lint, 'error'));
+        expect(severities, containsPair(lint, 'warning'));
       }
     });
   }
