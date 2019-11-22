@@ -74,6 +74,19 @@ analyzer:
     sdk_version_ui_as_code: error
     sdk_version_ui_as_code_in_const_context: error
 
+    # Promote some builtin hints/infos/warnings to errors:
+    dead_code: error
+    duplicate_hidden_name: error
+    duplicate_import: error
+    duplicate_shown_name: error
+    unused_catch_clause: error
+    unused_catch_stack: error
+    unused_element: error
+    unused_field: error
+    unused_import: error
+    unused_local_variable: error
+    unused_shown_name: error
+
     # Promote enabled lints to errors:
     annotate_overrides: error
     avoid_double_and_int_checks: error
