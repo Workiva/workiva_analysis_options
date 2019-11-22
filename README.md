@@ -111,17 +111,24 @@ An automated tool will be integrated into a CI check to verify that Workiva Dart
 projects depend on this package at a specific version (or later) and include the
 shared config in `analysis_options.yaml`.
 
-## Ensuring that analyzer errors/warnings/lints get fixed
+## Ensuring that analyzer infractions get fixed
 
-All required analyzer lints and rules will have their severities upgraded to
-"error" so that they cause analysis to fail by default.
+All required analyzer lints and infos/hints/lints will have their severities
+upgraded to "warning", e.g.:
 
 ```yaml
 # package:workiva_analysis_options/v1.yaml
 analyzer:
   errors:
-    avoid_empty_else: error
+    avoid_empty_else: warning
 ```
+
+It is then expected (and enforced internally at Workiva) that CI and developers
+run analysis in a way that results in a non-zero exit code when errors or
+warnings are present.
+
+With `dartanalyzer`, this means using `--fatal-warnings`. With `tuneup`, this is
+enforced by default.
 
 ---
 
