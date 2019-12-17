@@ -1,0 +1,25 @@
+language: dart
+
+jobs:
+  include:
+    - dart: "2.4.1"
+      name: "SDK: 2.4.1"
+      script:
+        - dartanalyzer .
+        - pub run test
+    - dart: stable
+      name: "SDK: stable"
+      script:
+        - dartanalyzer .
+        - pub run test
+        - dartfmt -n --set-exit-if-changed .
+        - pub publish --dry-run
+    - dart: dev
+      name: "SDK: dev"
+      script:
+        - dartanalyzer .
+        - pub run test
+
+cache:
+  directories:
+    - "$HOME/.pub-cache"

@@ -1,11 +1,7 @@
 name: workiva_analysis_options
 version: 1.0.1
 homepage: https://github.com/Workiva/workiva_analysis_options
-
 description: Workiva's shared static analysis options.
-
-authors:
-  - Workiva Client Platform Team <clientplatform@workiva.com>
 
 environment:
   sdk: ">=2.4.0 <3.0.0"
