@@ -135,6 +135,10 @@ analyzer:
     valid_regexps: warning
     void_checks: warning
 
+    # Ignore ungenerated uri error:
+    # See: <https://github.com/Workiva/over_react/blob/new_boilerplate_wip/doc/new_boilerplate_migration.md#ignore-ungenerated-warnings-project-wide>.
+    uri_has_not_been_generated: ignore
+
 linter:
   rules:
     - annotate_overrides

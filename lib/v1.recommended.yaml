@@ -124,9 +124,6 @@ analyzer:
     use_function_type_syntax_for_parameters: warning
     use_rethrow_when_possible: warning
 
-    # Ignore error:
-    uri_has_not_been_generated: ignore
-
 linter:
   rules:
     - always_require_non_null_named_parameters
