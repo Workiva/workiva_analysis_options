@@ -1,4 +1,4 @@
-FROM drydock-prod.workiva.net/workiva/dart2_base_image:1
+FROM google/dart:2
 
 WORKDIR /build/
 COPY pubspec.yaml .
