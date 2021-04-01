@@ -2,6 +2,7 @@
 
 - Null safety release. No Dart code in this package's `lib/`, so this is being
 done in a minor release.
+- Switch from Travis CI to GitHub workflow.
 
 ## 1.1.0
 
