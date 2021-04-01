@@ -68,7 +68,7 @@ void main() {
     final fileName = file.path.split(Platform.pathSeparator).last;
 
     test(fileName, () {
-      final yaml = loadYaml(file.readAsStringSync(), sourceUrl: fileName);
+      final yaml = loadYaml(file.readAsStringSync(), sourceUrl: file.uri);
 
       final lints = List<String>.from(yaml['linter']['rules']);
       expect(lints, isNotEmpty);
