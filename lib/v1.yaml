@@ -81,9 +81,10 @@ analyzer:
     duplicate_shown_name: warning
     unused_catch_clause: warning
     unused_catch_stack: warning
-    unused_element: warning
-    unused_field: warning
-    unused_import: warning
+    # Disabled during the Dart 2.13 transition
+    # unused_element: warning
+    # unused_field: warning
+    # unused_import: warning
     unused_local_variable: warning
     unused_shown_name: warning
 
@@ -130,7 +131,8 @@ analyzer:
     unnecessary_null_aware_assignments: warning
     unnecessary_null_in_if_null_operators: warning
     unnecessary_statements: warning
-    unsafe_html: warning
+    # Disabled during the Dart 2.13 transition
+    # unsafe_html: warning
     unrelated_type_equality_checks: warning
     valid_regexps: warning
     void_checks: warning
@@ -183,7 +185,8 @@ linter:
     - unnecessary_null_aware_assignments
     - unnecessary_null_in_if_null_operators
     - unnecessary_statements
-    - unsafe_html
+    # Disabled during the Dart 2.13 transition
+    # - unsafe_html
     - unrelated_type_equality_checks
     - valid_regexps
     - void_checks
