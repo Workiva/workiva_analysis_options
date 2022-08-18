@@ -66,10 +66,14 @@ include: package:workiva_analysis_options/v1.yaml
 analyzer:
   errors:
     # Promote enabled lints to errors:
+    always_declare_return_types: warning
+    always_put_required_named_parameters_first: warning
     always_require_non_null_named_parameters: warning
     avoid_bool_literals_in_conditional_expressions: warning
+    avoid_field_initializers_in_const_classes: warning
     avoid_function_literals_in_foreach_calls: warning
     avoid_implementing_value_types: warning
+    avoid_js_rounded_ints: warning
     avoid_null_checks_in_equality_operators: warning
     avoid_positional_boolean_parameters: warning
     avoid_relative_lib_imports: warning
@@ -79,12 +83,20 @@ analyzer:
     avoid_returning_null_for_future: warning
     avoid_returning_null_for_void: warning
     avoid_setters_without_getters: warning
+    avoid_slow_async_io: warning
     avoid_types_on_closure_parameters: warning
     avoid_unused_constructor_parameters: warning
     cascade_invocations: warning
     comment_references: warning
+    control_flow_in_finally: warning
     curly_braces_in_flow_control_structures: warning
+    directives_ordering: warning
+    duplicate_ignore: warning
+    invalid_required_named_param: warning
+    invalid_required_positional_param: warning
+    invariant_booleans: warning
     join_return_with_assignment: warning
+    literal_only_boolean_expressions: warning
     omit_local_variable_types: warning
     overridden_fields: warning
     package_api_docs: warning
@@ -94,8 +106,11 @@ analyzer:
     prefer_asserts_in_initializer_lists: warning
     prefer_collection_literals: warning
     prefer_conditional_assignment: warning
+    prefer_const_constructors_in_immutables: warning
     prefer_const_declarations: warning
-    provide_deprecation_message: warning
+    prefer_const_literals_to_create_immutables: warning
+    prefer_constructors_over_static_methods: warning
+    prefer_typing_uninitialized_variables: warning
     prefer_final_fields: warning
     prefer_final_in_for_each: warning
     prefer_final_locals: warning
@@ -103,6 +118,7 @@ analyzer:
     prefer_if_elements_to_conditional_expressions: warning
     prefer_initializing_formals: warning
     prefer_inlined_adds: warning
+    prefer_int_literals: warning
     prefer_interpolation_to_compose_strings: warning
     prefer_iterable_whereType: warning
     prefer_mixin: warning
@@ -110,12 +126,16 @@ analyzer:
     prefer_single_quotes: warning
     prefer_spread_collections: warning
     prefer_void_to_null: warning
+    provide_deprecation_message: warning
     sort_pub_dependencies: warning
+    sort_unnamed_constructors_first: warning
     test_types_in_equals: warning
+    throw_in_finally: warning
     type_annotate_public_apis: warning
     unawaited_futures: warning
     unnecessary_await_in_return: warning
     unnecessary_brace_in_string_interps: warning
+    unnecessary_cast: warning
     unnecessary_getters_setters: warning
     unnecessary_lambdas: warning
     unnecessary_parenthesis: warning
@@ -123,13 +143,20 @@ analyzer:
     unnecessary_this: warning
     use_function_type_syntax_for_parameters: warning
     use_rethrow_when_possible: warning
+    use_setters_to_change_properties: warning
+    use_string_buffers: warning
+    use_to_and_as_if_applicable: warning
 
 linter:
   rules:
+    - always_declare_return_types
+    - always_put_required_named_parameters_first
     - always_require_non_null_named_parameters
     - avoid_bool_literals_in_conditional_expressions
+    - avoid_field_initializers_in_const_classes
     - avoid_function_literals_in_foreach_calls
     - avoid_implementing_value_types
+    - avoid_js_rounded_ints
     - avoid_null_checks_in_equality_operators
     - avoid_positional_boolean_parameters
     - avoid_relative_lib_imports
@@ -139,12 +166,20 @@ linter:
     - avoid_returning_null_for_future
     - avoid_returning_null_for_void
     - avoid_setters_without_getters
+    - avoid_slow_async_io
     - avoid_types_on_closure_parameters
     - avoid_unused_constructor_parameters
     - cascade_invocations
     - comment_references
+    - control_flow_in_finally
     - curly_braces_in_flow_control_structures
+    - directives_ordering
+    - duplicate_ignore
+    - invalid_required_named_param
+    - invalid_required_positional_param
+    - invariant_booleans
     - join_return_with_assignment
+    - literal_only_boolean_expressions
     - omit_local_variable_types
     - overridden_fields
     - package_api_docs
@@ -154,8 +189,11 @@ linter:
     - prefer_asserts_in_initializer_lists
     - prefer_collection_literals
     - prefer_conditional_assignment
+    - prefer_const_constructors_in_immutables
     - prefer_const_declarations
-    - provide_deprecation_message
+    - prefer_const_literals_to_create_immutables
+    - prefer_constructors_over_static_methods
+    - prefer_typing_uninitialized_variables
     - prefer_final_fields
     - prefer_final_in_for_each
     - prefer_final_locals
@@ -163,6 +201,7 @@ linter:
     - prefer_if_elements_to_conditional_expressions
     - prefer_initializing_formals
     - prefer_inlined_adds
+    - prefer_int_literals
     - prefer_interpolation_to_compose_strings
     - prefer_iterable_whereType
     - prefer_mixin
@@ -170,12 +209,16 @@ linter:
     - prefer_single_quotes
     - prefer_spread_collections
     - prefer_void_to_null
+    - provide_deprecation_message
     - sort_pub_dependencies
+    - sort_unnamed_constructors_first
     - test_types_in_equals
+    - throw_in_finally
     - type_annotate_public_apis
     - unawaited_futures
     - unnecessary_await_in_return
     - unnecessary_brace_in_string_interps
+    - unnecessary_cast
     - unnecessary_getters_setters
     - unnecessary_lambdas
     - unnecessary_parenthesis
@@ -183,3 +226,6 @@ linter:
     - unnecessary_this
     - use_function_type_syntax_for_parameters
     - use_rethrow_when_possible
+    - use_setters_to_change_properties
+    - use_string_buffers
+    - use_to_and_as_if_applicable
