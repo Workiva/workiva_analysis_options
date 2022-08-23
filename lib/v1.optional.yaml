@@ -69,7 +69,7 @@ include: package:workiva_analysis_options/v1.recommended.yaml
 
 analyzer:
   errors:
-    # Promote enabled lints to errors:
+    # Promote enabled lints to warnings:
     always_declare_return_types: warning
     always_put_required_named_parameters_first: warning
     always_specify_types: warning
