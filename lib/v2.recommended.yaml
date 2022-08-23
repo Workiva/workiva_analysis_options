@@ -91,10 +91,6 @@ analyzer:
     control_flow_in_finally: warning
     curly_braces_in_flow_control_structures: warning
     directives_ordering: warning
-    duplicate_ignore: warning
-    invalid_required_named_param: warning
-    invalid_required_positional_param: warning
-    invariant_booleans: warning
     join_return_with_assignment: warning
     literal_only_boolean_expressions: warning
     omit_local_variable_types: warning
@@ -135,7 +131,6 @@ analyzer:
     unawaited_futures: warning
     unnecessary_await_in_return: warning
     unnecessary_brace_in_string_interps: warning
-    unnecessary_cast: warning
     unnecessary_getters_setters: warning
     unnecessary_lambdas: warning
     unnecessary_parenthesis: warning
@@ -174,10 +169,6 @@ linter:
     - control_flow_in_finally
     - curly_braces_in_flow_control_structures
     - directives_ordering
-    - duplicate_ignore
-    - invalid_required_named_param
-    - invalid_required_positional_param
-    - invariant_booleans
     - join_return_with_assignment
     - literal_only_boolean_expressions
     - omit_local_variable_types
@@ -218,7 +209,6 @@ linter:
     - unawaited_futures
     - unnecessary_await_in_return
     - unnecessary_brace_in_string_interps
-    - unnecessary_cast
     - unnecessary_getters_setters
     - unnecessary_lambdas
     - unnecessary_parenthesis

@@ -75,10 +75,21 @@ analyzer:
     sdk_version_ui_as_code_in_const_context: warning
 
     # Promote some builtin hints to warnings:
+    can_be_null_after_null_aware: warning
     dead_code: warning
     duplicate_hidden_name: warning
+    duplicate_ignore: warning
     duplicate_import: warning
     duplicate_shown_name: warning
+    invalid_required_named_param: warning
+    invalid_required_positional_param: warning
+    invalid_use_of_protected_member: warning
+    invalid_use_of_visible_for_testing_member: warning
+    missing_required_param: warning
+    missing_return: warning
+    must_call_super: warning
+    subtype_of_sealed_class: warning
+    unnecessary_cast: warning
     unused_catch_clause: warning
     unused_catch_stack: warning
     unused_element: warning
@@ -100,7 +111,6 @@ analyzer:
     await_only_futures: warning
     camel_case_extensions: warning
     camel_case_types: warning
-    can_be_null_after_null_aware: warning
     cancel_subscriptions: warning
     close_sinks: warning
     empty_catches: warning
@@ -108,16 +118,11 @@ analyzer:
     empty_statements: warning
     file_names: warning
     hash_and_equals: warning
-    invalid_use_of_protected_member: warning
-    invalid_use_of_visible_for_testing_member: warning
     implementation_imports: warning
     iterable_contains_unrelated_type: warning
     library_names: warning
     library_prefixes: warning
     list_remove_unrelated_type: warning
-    missing_required_param: warning
-    missing_return: warning
-    must_call_super: warning
     no_adjacent_strings_in_list: warning
     no_duplicate_case_values: warning
     null_closures: warning
@@ -130,7 +135,6 @@ analyzer:
     prefer_is_not_empty: warning
     recursive_getters: warning
     slash_for_doc_comments: warning
-    subtype_of_sealed_class: warning
     type_init_formals: warning
     unnecessary_const: warning
     unnecessary_new: warning
@@ -160,7 +164,6 @@ linter:
     - await_only_futures
     - camel_case_extensions
     - camel_case_types
-    - can_be_null_after_null_aware
     - cancel_subscriptions
     - close_sinks
     - empty_catches
@@ -168,16 +171,11 @@ linter:
     - empty_statements
     - file_names
     - hash_and_equals
-    - invalid_use_of_protected_member
-    - invalid_use_of_visible_for_testing_member
     - implementation_imports
     - iterable_contains_unrelated_type
     - library_names
     - library_prefixes
     - list_remove_unrelated_type
-    - missing_required_param
-    - missing_return
-    - must_call_super
     - no_adjacent_strings_in_list
     - no_duplicate_case_values
     - null_closures
@@ -190,7 +188,6 @@ linter:
     - prefer_is_not_empty
     - recursive_getters
     - slash_for_doc_comments
-    - subtype_of_sealed_class
     - type_init_formals
     - unnecessary_const
     - unnecessary_new
