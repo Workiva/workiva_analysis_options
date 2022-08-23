@@ -83,7 +83,6 @@ analyzer:
     control_flow_in_finally: warning
     directives_ordering: warning
     flutter_style_todos: warning
-    invariant_booleans: warning
     literal_only_boolean_expressions: warning
     non_constant_identifier_names: warning
     parameter_assignments: warning
@@ -120,7 +119,6 @@ linter:
     - control_flow_in_finally
     - directives_ordering
     - flutter_style_todos
-    - invariant_booleans
     - literal_only_boolean_expressions
     - non_constant_identifier_names
     - parameter_assignments
