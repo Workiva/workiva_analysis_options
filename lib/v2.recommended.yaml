@@ -70,7 +70,6 @@ analyzer:
     always_put_required_named_parameters_first: warning
     always_require_non_null_named_parameters: warning
     avoid_bool_literals_in_conditional_expressions: warning
-    avoid_field_initializers_in_const_classes: warning
     avoid_function_literals_in_foreach_calls: warning
     avoid_implementing_value_types: warning
     avoid_js_rounded_ints: warning
@@ -139,7 +138,6 @@ analyzer:
     unnecessary_this: warning
     use_function_type_syntax_for_parameters: warning
     use_rethrow_when_possible: warning
-    use_setters_to_change_properties: warning
     use_string_buffers: warning
     use_to_and_as_if_applicable: warning
 
@@ -149,7 +147,6 @@ linter:
     - always_put_required_named_parameters_first
     - always_require_non_null_named_parameters
     - avoid_bool_literals_in_conditional_expressions
-    - avoid_field_initializers_in_const_classes
     - avoid_function_literals_in_foreach_calls
     - avoid_implementing_value_types
     - avoid_js_rounded_ints
@@ -220,6 +217,5 @@ linter:
     - unnecessary_this
     - use_function_type_syntax_for_parameters
     - use_rethrow_when_possible
-    - use_setters_to_change_properties
     - use_string_buffers
     - use_to_and_as_if_applicable
