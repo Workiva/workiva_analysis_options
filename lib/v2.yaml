@@ -75,16 +75,26 @@ analyzer:
     sdk_version_ui_as_code_in_const_context: warning
 
     # Promote some builtin hints to warnings:
+    can_be_null_after_null_aware: warning
     dead_code: warning
     duplicate_hidden_name: warning
+    duplicate_ignore: warning
     duplicate_import: warning
     duplicate_shown_name: warning
+    invalid_required_named_param: warning
+    invalid_required_positional_param: warning
+    invalid_use_of_protected_member: warning
+    invalid_use_of_visible_for_testing_member: warning
+    missing_required_param: warning
+    missing_return: warning
+    must_call_super: warning
+    subtype_of_sealed_class: warning
+    unnecessary_cast: warning
     unused_catch_clause: warning
     unused_catch_stack: warning
-    # Disabled during the Dart 2.13 transition
-    # unused_element: warning
-    # unused_field: warning
-    # unused_import: warning
+    unused_element: warning
+    unused_field: warning
+    unused_import: warning
     unused_local_variable: warning
     unused_shown_name: warning
 
@@ -131,8 +141,7 @@ analyzer:
     unnecessary_null_aware_assignments: warning
     unnecessary_null_in_if_null_operators: warning
     unnecessary_statements: warning
-    # Disabled during the Dart 2.13 transition
-    # unsafe_html: warning
+    unsafe_html: warning
     unrelated_type_equality_checks: warning
     valid_regexps: warning
     void_checks: warning
@@ -185,8 +194,7 @@ linter:
     - unnecessary_null_aware_assignments
     - unnecessary_null_in_if_null_operators
     - unnecessary_statements
-    # Disabled during the Dart 2.13 transition
-    # - unsafe_html
+    - unsafe_html
     - unrelated_type_equality_checks
     - valid_regexps
     - void_checks
