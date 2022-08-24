@@ -74,7 +74,7 @@ analyzer:
     sdk_version_ui_as_code: warning
     sdk_version_ui_as_code_in_const_context: warning
 
-    # Promote some builtin hints/infos/warnings to errors:
+    # Promote some builtin hints to warnings:
     dead_code: warning
     duplicate_hidden_name: warning
     duplicate_import: warning
@@ -88,7 +88,7 @@ analyzer:
     unused_local_variable: warning
     unused_shown_name: warning
 
-    # Promote enabled lints to errors:
+    # Promote enabled lints to warnings:
     annotate_overrides: warning
     avoid_double_and_int_checks: warning
     avoid_empty_else: warning

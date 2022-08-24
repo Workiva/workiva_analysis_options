@@ -65,7 +65,7 @@ include: package:workiva_analysis_options/v1.yaml
 
 analyzer:
   errors:
-    # Promote enabled lints to errors:
+    # Promote enabled lints to warnings:
     always_require_non_null_named_parameters: warning
     avoid_bool_literals_in_conditional_expressions: warning
     avoid_function_literals_in_foreach_calls: warning

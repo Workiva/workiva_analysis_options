@@ -65,12 +65,11 @@ include: package:workiva_analysis_options/v1.yaml
 
 analyzer:
   errors:
-    # Promote enabled lints to errors:
+    # Promote enabled lints to warnings:
     always_declare_return_types: warning
     always_put_required_named_parameters_first: warning
     always_require_non_null_named_parameters: warning
     avoid_bool_literals_in_conditional_expressions: warning
-    avoid_field_initializers_in_const_classes: warning
     avoid_function_literals_in_foreach_calls: warning
     avoid_implementing_value_types: warning
     avoid_js_rounded_ints: warning
@@ -84,6 +83,7 @@ analyzer:
     avoid_returning_null_for_void: warning
     avoid_setters_without_getters: warning
     avoid_slow_async_io: warning
+    avoid_type_to_string: warning
     avoid_types_on_closure_parameters: warning
     avoid_unused_constructor_parameters: warning
     cascade_invocations: warning
@@ -91,10 +91,6 @@ analyzer:
     control_flow_in_finally: warning
     curly_braces_in_flow_control_structures: warning
     directives_ordering: warning
-    duplicate_ignore: warning
-    invalid_required_named_param: warning
-    invalid_required_positional_param: warning
-    invariant_booleans: warning
     join_return_with_assignment: warning
     literal_only_boolean_expressions: warning
     omit_local_variable_types: warning
@@ -135,15 +131,15 @@ analyzer:
     unawaited_futures: warning
     unnecessary_await_in_return: warning
     unnecessary_brace_in_string_interps: warning
-    unnecessary_cast: warning
     unnecessary_getters_setters: warning
     unnecessary_lambdas: warning
     unnecessary_parenthesis: warning
     unnecessary_overrides: warning
+    unnecessary_string_escapes: warning
+    unnecessary_string_interpolations: warning
     unnecessary_this: warning
     use_function_type_syntax_for_parameters: warning
     use_rethrow_when_possible: warning
-    use_setters_to_change_properties: warning
     use_string_buffers: warning
     use_to_and_as_if_applicable: warning
 
@@ -153,7 +149,6 @@ linter:
     - always_put_required_named_parameters_first
     - always_require_non_null_named_parameters
     - avoid_bool_literals_in_conditional_expressions
-    - avoid_field_initializers_in_const_classes
     - avoid_function_literals_in_foreach_calls
     - avoid_implementing_value_types
     - avoid_js_rounded_ints
@@ -167,6 +162,7 @@ linter:
     - avoid_returning_null_for_void
     - avoid_setters_without_getters
     - avoid_slow_async_io
+    - avoid_type_to_string
     - avoid_types_on_closure_parameters
     - avoid_unused_constructor_parameters
     - cascade_invocations
@@ -174,10 +170,6 @@ linter:
     - control_flow_in_finally
     - curly_braces_in_flow_control_structures
     - directives_ordering
-    - duplicate_ignore
-    - invalid_required_named_param
-    - invalid_required_positional_param
-    - invariant_booleans
     - join_return_with_assignment
     - literal_only_boolean_expressions
     - omit_local_variable_types
@@ -218,14 +210,14 @@ linter:
     - unawaited_futures
     - unnecessary_await_in_return
     - unnecessary_brace_in_string_interps
-    - unnecessary_cast
     - unnecessary_getters_setters
     - unnecessary_lambdas
     - unnecessary_parenthesis
     - unnecessary_overrides
+    - unnecessary_string_escapes
+    - unnecessary_string_interpolations
     - unnecessary_this
     - use_function_type_syntax_for_parameters
     - use_rethrow_when_possible
-    - use_setters_to_change_properties
     - use_string_buffers
     - use_to_and_as_if_applicable
