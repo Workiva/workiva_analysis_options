@@ -84,6 +84,7 @@ analyzer:
     avoid_returning_null_for_void: warning
     avoid_setters_without_getters: warning
     avoid_slow_async_io: warning
+    avoid_type_to_string: warning
     avoid_types_on_closure_parameters: warning
     avoid_unused_constructor_parameters: warning
     cascade_invocations: warning
@@ -162,6 +163,7 @@ linter:
     - avoid_returning_null_for_void
     - avoid_setters_without_getters
     - avoid_slow_async_io
+    - avoid_type_to_string
     - avoid_types_on_closure_parameters
     - avoid_unused_constructor_parameters
     - cascade_invocations
