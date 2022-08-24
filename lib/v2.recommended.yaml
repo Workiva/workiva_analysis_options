@@ -135,6 +135,8 @@ analyzer:
     unnecessary_lambdas: warning
     unnecessary_parenthesis: warning
     unnecessary_overrides: warning
+    unnecessary_string_escapes: warning
+    unnecessary_string_interpolations: warning
     unnecessary_this: warning
     use_function_type_syntax_for_parameters: warning
     use_rethrow_when_possible: warning
