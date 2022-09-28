@@ -61,7 +61,7 @@
 # https://github.com/Workiva/workiva_analysis_options/issues/2
 
 # This file also includes all of the required rules.
-include: package:workiva_analysis_options/v1.yaml
+include: package:workiva_analysis_options/v2.yaml
 
 analyzer:
   errors:
