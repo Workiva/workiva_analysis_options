@@ -81,6 +81,7 @@ analyzer:
     duplicate_ignore: warning
     duplicate_import: warning
     duplicate_shown_name: warning
+    invalid_export_of_internal_element: warning
     invalid_required_named_param: warning
     invalid_required_positional_param: warning
     invalid_use_of_protected_member: warning
