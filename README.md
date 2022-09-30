@@ -1,7 +1,8 @@
 # Workiva's Shared Dart Analysis Options
 
-This is our take on the Dart team's [`pedantic` package][pedantic] and is used
-in all Workiva Dart packages.
+This is our take on the Dart team's [`lints` package][lints] (originally
+inspired by the [`pendantic` package][pedantic]) and is used in all Workiva Dart
+packages.
 
 This package (`package:workiva_analysis_options`) publicly exports
 `analysis_options.yaml` files that can be included in a project's own
@@ -15,7 +16,7 @@ dev_dependencies:
 
 ```yaml
 # analysis_options.yaml
-include: package:workiva_analysis_options/v1.yaml
+include: package:workiva_analysis_options/v2.yaml
 ```
 
 Because most packages don't commit a `pubspec.lock`, CI may fail if updates to
@@ -40,8 +41,8 @@ This enables consumers to depend on this package with a version range like
 
 ## How lints and analyzer rules are evaluated
 
-Periodically, Workiva's Client Platform team will evaluate the available lints
-and rules and attempt to categorize them into one of the following:
+Periodically, Workiva's Dart Community will evaluate the available lints and
+rules and attempt to categorize them into one of the following:
 
 - Required
   - Should provide enough value that it is worth requiring them for all Workiva
@@ -83,7 +84,7 @@ and rules and attempt to categorize them into one of the following:
     investigation/experimentation can be done.
 
 We will use feedback from the Dart developers at Workiva, other similar
-resources (like the [`pedantic` package][pedantic]), and the number of existing
+resources (like the [`lints` package][lints]), and the number of existing
 infractions across Workiva Dart projects (collected automatically) to inform our
 decisions. Each lint has its own issue in this repo that can be used to discuss
 changes and will serve as documentation of context and reasons that influenced
@@ -100,10 +101,6 @@ recommended rules.
 # Enables all required AND recommended rules.
 include: package:workiva_analysis_options/v1.recommended.yaml
 ```
-
-_Note: there is also a version provided by this library that includes the
-optional rules, but it is only intended for use in an automated fashion for the
-purpose of gathering data on the number of infractions in Workiva packages._
 
 ## Ensuring adoption of the latest shared options
 
@@ -127,8 +124,8 @@ It is then expected (and enforced internally at Workiva) that CI and developers
 run analysis in a way that results in a non-zero exit code when errors or
 warnings are present.
 
-With `dartanalyzer`, this means using `--fatal-warnings`. With `tuneup`, this is
-enforced by default.
+With `dartanalyzer`, this means using `--fatal-warnings`. With `dart analyze`
+and `tuneup`, this is enforced by default.
 
 ---
 
@@ -137,4 +134,5 @@ enforced by default.
 [Lints & Rules Table of Contents][lints-toc]
 
 [lints-toc]: https://github.com/Workiva/workiva_analysis_options/issues/2
+[lints]: https://pub.dev/packages/lints
 [pedantic]: https://pub.dev/packages/pedantic
