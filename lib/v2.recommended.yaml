@@ -165,7 +165,6 @@ linter:
     - avoid_type_to_string
     - avoid_types_on_closure_parameters
     - avoid_unused_constructor_parameters
-    - cascade_invocations
     - comment_references
     - control_flow_in_finally
     - curly_braces_in_flow_control_structures
@@ -202,7 +201,6 @@ linter:
     - prefer_spread_collections
     - prefer_void_to_null
     - provide_deprecation_message
-    - sort_pub_dependencies
     - sort_unnamed_constructors_first
     - test_types_in_equals
     - throw_in_finally
@@ -219,5 +217,4 @@ linter:
     - unnecessary_this
     - use_function_type_syntax_for_parameters
     - use_rethrow_when_possible
-    - use_string_buffers
     - use_to_and_as_if_applicable
