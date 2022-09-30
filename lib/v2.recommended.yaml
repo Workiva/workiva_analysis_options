@@ -86,7 +86,6 @@ analyzer:
     avoid_type_to_string: warning
     avoid_types_on_closure_parameters: warning
     avoid_unused_constructor_parameters: warning
-    cascade_invocations: warning
     comment_references: warning
     control_flow_in_finally: warning
     curly_braces_in_flow_control_structures: warning
@@ -123,7 +122,6 @@ analyzer:
     prefer_spread_collections: warning
     prefer_void_to_null: warning
     provide_deprecation_message: warning
-    sort_pub_dependencies: warning
     sort_unnamed_constructors_first: warning
     test_types_in_equals: warning
     throw_in_finally: warning
@@ -140,7 +138,6 @@ analyzer:
     unnecessary_this: warning
     use_function_type_syntax_for_parameters: warning
     use_rethrow_when_possible: warning
-    use_string_buffers: warning
     use_to_and_as_if_applicable: warning
 
 linter:
