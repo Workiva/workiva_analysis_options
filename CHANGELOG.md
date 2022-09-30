@@ -1,3 +1,9 @@
+## 1.3.0
+
+- Add `v2` rulesets:
+  - `package:workiva_analysis_options/v2.yaml`
+  - `package:workiva_analysis_options/v2.recommended.yaml`
+
 ## 1.2.5
 
 - CI tweaks.

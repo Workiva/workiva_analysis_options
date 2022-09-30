@@ -64,15 +64,15 @@ analyzer:
   errors:
     # Protect against using language features that are incompatible with the
     # minimum SDK version for the current project:
-    sdk_version_async_exported_from_core: warning
     sdk_version_as_expression_in_const_context: warning
+    sdk_version_async_exported_from_core: warning
     sdk_version_bool_operator_in_const_context: warning
     sdk_version_eq_eq_operator_in_const_context: warning
     sdk_version_extension_methods: warning
     sdk_version_is_expression_in_const_context: warning
     sdk_version_set_literal: warning
-    sdk_version_ui_as_code: warning
     sdk_version_ui_as_code_in_const_context: warning
+    sdk_version_ui_as_code: warning
 
     # Promote some builtin hints to warnings:
     can_be_null_after_null_aware: warning
@@ -142,10 +142,15 @@ analyzer:
     unnecessary_null_aware_assignments: warning
     unnecessary_null_in_if_null_operators: warning
     unnecessary_statements: warning
-    unsafe_html: warning
     unrelated_type_equality_checks: warning
+    unsafe_html: warning
     valid_regexps: warning
     void_checks: warning
+
+    # Ignore sorting of pub deps because Workiva packages often have many public
+    # and private dependencies. Interleaving them makes it harder to maintain
+    # than keeping them separate.
+    sort_pub_dependencies: ignore
 
     # Ignore ungenerated uri error:
     # See: <https://github.com/Workiva/over_react/blob/new_boilerplate_wip/doc/new_boilerplate_migration.md#ignore-ungenerated-warnings-project-wide>.
@@ -195,7 +200,7 @@ linter:
     - unnecessary_null_aware_assignments
     - unnecessary_null_in_if_null_operators
     - unnecessary_statements
-    - unsafe_html
     - unrelated_type_equality_checks
+    - unsafe_html
     - valid_regexps
     - void_checks
