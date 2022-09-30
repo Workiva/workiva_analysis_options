@@ -77,10 +77,10 @@ analyzer:
     avoid_positional_boolean_parameters: warning
     avoid_relative_lib_imports: warning
     avoid_renaming_method_parameters: warning
-    avoid_returning_this: warning
-    avoid_returning_null: warning
     avoid_returning_null_for_future: warning
     avoid_returning_null_for_void: warning
+    avoid_returning_null: warning
+    avoid_returning_this: warning
     avoid_setters_without_getters: warning
     avoid_slow_async_io: warning
     avoid_type_to_string: warning
@@ -95,8 +95,8 @@ analyzer:
     omit_local_variable_types: warning
     overridden_fields: warning
     package_api_docs: warning
-    package_prefixed_library_names: warning
     package_names: warning
+    package_prefixed_library_names: warning
     prefer_adjacent_string_concatenation: warning
     prefer_asserts_in_initializer_lists: warning
     prefer_collection_literals: warning
@@ -105,7 +105,6 @@ analyzer:
     prefer_const_declarations: warning
     prefer_const_literals_to_create_immutables: warning
     prefer_constructors_over_static_methods: warning
-    prefer_typing_uninitialized_variables: warning
     prefer_final_fields: warning
     prefer_final_in_for_each: warning
     prefer_final_locals: warning
@@ -120,6 +119,7 @@ analyzer:
     prefer_null_aware_operators: warning
     prefer_single_quotes: warning
     prefer_spread_collections: warning
+    prefer_typing_uninitialized_variables: warning
     prefer_void_to_null: warning
     provide_deprecation_message: warning
     sort_unnamed_constructors_first: warning
@@ -131,8 +131,8 @@ analyzer:
     unnecessary_brace_in_string_interps: warning
     unnecessary_getters_setters: warning
     unnecessary_lambdas: warning
-    unnecessary_parenthesis: warning
     unnecessary_overrides: warning
+    unnecessary_parenthesis: warning
     unnecessary_string_escapes: warning
     unnecessary_string_interpolations: warning
     unnecessary_this: warning
@@ -153,10 +153,10 @@ linter:
     - avoid_positional_boolean_parameters
     - avoid_relative_lib_imports
     - avoid_renaming_method_parameters
-    - avoid_returning_this
     - avoid_returning_null
     - avoid_returning_null_for_future
     - avoid_returning_null_for_void
+    - avoid_returning_this
     - avoid_setters_without_getters
     - avoid_slow_async_io
     - avoid_type_to_string
@@ -171,8 +171,8 @@ linter:
     - omit_local_variable_types
     - overridden_fields
     - package_api_docs
-    - package_prefixed_library_names
     - package_names
+    - package_prefixed_library_names
     - prefer_adjacent_string_concatenation
     - prefer_asserts_in_initializer_lists
     - prefer_collection_literals
@@ -181,7 +181,6 @@ linter:
     - prefer_const_declarations
     - prefer_const_literals_to_create_immutables
     - prefer_constructors_over_static_methods
-    - prefer_typing_uninitialized_variables
     - prefer_final_fields
     - prefer_final_in_for_each
     - prefer_final_locals
@@ -196,6 +195,7 @@ linter:
     - prefer_null_aware_operators
     - prefer_single_quotes
     - prefer_spread_collections
+    - prefer_typing_uninitialized_variables
     - prefer_void_to_null
     - provide_deprecation_message
     - sort_unnamed_constructors_first
@@ -207,8 +207,8 @@ linter:
     - unnecessary_brace_in_string_interps
     - unnecessary_getters_setters
     - unnecessary_lambdas
-    - unnecessary_parenthesis
     - unnecessary_overrides
+    - unnecessary_parenthesis
     - unnecessary_string_escapes
     - unnecessary_string_interpolations
     - unnecessary_this
