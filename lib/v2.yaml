@@ -62,18 +62,6 @@
 
 analyzer:
   errors:
-    # Protect against using language features that are incompatible with the
-    # minimum SDK version for the current project:
-    sdk_version_as_expression_in_const_context: warning
-    sdk_version_async_exported_from_core: warning
-    sdk_version_bool_operator_in_const_context: warning
-    sdk_version_eq_eq_operator_in_const_context: warning
-    sdk_version_extension_methods: warning
-    sdk_version_is_expression_in_const_context: warning
-    sdk_version_set_literal: warning
-    sdk_version_ui_as_code_in_const_context: warning
-    sdk_version_ui_as_code: warning
-
     # Promote some builtin hints to warnings:
     can_be_null_after_null_aware: warning
     dead_code: warning
