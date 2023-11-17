@@ -1,3 +1,15 @@
+## 1.4.1
+
+- [#200](https://github.com/Workiva/workiva_analysis_options/pull/200) Remove
+`sdk_version_<language_feature>` rules. These were diagnostics produced by the
+analyzer when a language feature was used without specifying the proper minimum
+SDK version and this package was promoting them to errors since earlier versions
+of Dart did not do that by default. They are no longer necessary.
+
+## 1.4.0
+
+- [#198](https://github.com/Workiva/workiva_analysis_options/pull/198) Add NNBD-related lints
+
 ## 1.3.0
 
 - Add `v2` rulesets:
