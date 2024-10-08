@@ -63,7 +63,6 @@
 analyzer:
   errors:
     # Promote some builtin hints to warnings:
-    can_be_null_after_null_aware: warning
     dead_code: warning
     duplicate_hidden_name: warning
     duplicate_ignore: warning

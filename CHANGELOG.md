@@ -1,3 +1,7 @@
+## 1.4.2
+
+- remove reference to a hint that was removed in Dart 3 `can_be_null_after_null_aware`
+
 ## 1.4.1
 
 - [#200](https://github.com/Workiva/workiva_analysis_options/pull/200) Remove
