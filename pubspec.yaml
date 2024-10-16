@@ -9,3 +9,4 @@ environment:
 dev_dependencies:
   test: ^1.15.7
   yaml: ^3.1.0
+  workiva_analysis_options: ^1.4.1
