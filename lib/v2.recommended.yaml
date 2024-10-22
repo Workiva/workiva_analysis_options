@@ -90,6 +90,7 @@ analyzer:
     control_flow_in_finally: warning
     curly_braces_in_flow_control_structures: warning
     directives_ordering: warning
+    import_of_legacy_library_into_null_safe: warning
     join_return_with_assignment: warning
     literal_only_boolean_expressions: warning
     omit_local_variable_types: warning

@@ -108,6 +108,7 @@ analyzer:
     file_names: warning
     hash_and_equals: warning
     implementation_imports: warning
+    import_of_legacy_library_into_null_safe: warning
     iterable_contains_unrelated_type: warning
     library_names: warning
     library_prefixes: warning

@@ -84,6 +84,7 @@ analyzer:
     cascade_invocations: warning
     comment_references: warning
     curly_braces_in_flow_control_structures: warning
+    import_of_legacy_library_into_null_safe: warning
     join_return_with_assignment: warning
     omit_local_variable_types: warning
     overridden_fields: warning
