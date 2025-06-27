@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   build:
-    uses: Workiva/gha-dart-oss/.github/workflows/build.yaml@v0.1.7
+    uses: Workiva/gha-dart-oss/.github/workflows/build.yaml@v0.1.8
 
   test-unit:
-    uses: Workiva/gha-dart-oss/.github/workflows/test-unit.yaml@v0.1.7
+    uses: Workiva/gha-dart-oss/.github/workflows/test-unit.yaml@v0.1.8
