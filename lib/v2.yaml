@@ -69,8 +69,6 @@ analyzer:
     duplicate_import: warning
     duplicate_shown_name: warning
     invalid_export_of_internal_element: warning
-    invalid_required_named_param: warning
-    invalid_required_positional_param: warning
     invalid_use_of_protected_member: warning
     invalid_use_of_visible_for_testing_member: warning
     missing_required_param: warning
@@ -108,17 +106,14 @@ analyzer:
     file_names: warning
     hash_and_equals: warning
     implementation_imports: warning
-    iterable_contains_unrelated_type: warning
     library_names: warning
     library_prefixes: warning
-    list_remove_unrelated_type: warning
     no_adjacent_strings_in_list: warning
     no_duplicate_case_values: warning
     null_check_on_nullable_type_parameter: warning
     null_closures: warning
     only_throw_errors: warning
     prefer_contains: warning
-    prefer_equal_for_default_values: warning
     prefer_generic_function_type_aliases: warning
     prefer_if_null_operators: warning
     prefer_is_empty: warning
@@ -133,7 +128,6 @@ analyzer:
     unnecessary_null_in_if_null_operators: warning
     unnecessary_statements: warning
     unrelated_type_equality_checks: warning
-    unsafe_html: warning
     valid_regexps: warning
     void_checks: warning
 
@@ -169,17 +163,14 @@ linter:
     - file_names
     - hash_and_equals
     - implementation_imports
-    - iterable_contains_unrelated_type
     - library_names
     - library_prefixes
-    - list_remove_unrelated_type
     - no_adjacent_strings_in_list
     - no_duplicate_case_values
     - null_check_on_nullable_type_parameter
     - null_closures
     - only_throw_errors
     - prefer_contains
-    - prefer_equal_for_default_values
     - prefer_generic_function_type_aliases
     - prefer_if_null_operators
     - prefer_is_empty
@@ -194,6 +185,5 @@ linter:
     - unnecessary_null_in_if_null_operators
     - unnecessary_statements
     - unrelated_type_equality_checks
-    - unsafe_html
     - valid_regexps
     - void_checks
